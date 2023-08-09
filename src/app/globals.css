@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.imported {
+  background: rgba(80, 128, 107, 0.2);
+  backdrop-filter: blur(20px);
+}
