@@ -8,7 +8,7 @@ interface Props {
 }
 export default function CategoryItem(props: Props) {
   return (
-    <div className="flex flex-col text-center font-semibold text-xl p-4 ">
+    <div className="flex flex-col text-center font-semibold   text-sm lg:text-xl p-4 ">
       <Link href={props.link} className="">
         <Image alt="CategoryItem" src={props.img} width={200} height={80} />
       </Link>

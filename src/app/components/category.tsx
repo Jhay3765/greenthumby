@@ -3,7 +3,7 @@ import CategoryItem from "./categoryItem";
 
 export default function Category() {
   return (
-    <div className="flex px-4 lg:px-24 py-8 justify-center">
+    <div className="flex px-4 lg:px-24 py-8 justify-center ">
       <div>
         <h1 className="text-3xl  lg:text-5xl font-bold py-12 whitespace-nowrap">
           <span className="text-[#50806B]">Shop</span> by Category

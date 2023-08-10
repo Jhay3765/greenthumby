@@ -11,7 +11,7 @@ export default function Foot() {
   return (
     <footer className="flex flex-col items-center ">
       <div className="py-8 flex flex-col items-center">
-        <ul className="grid grid-cols-2 gap-8 sm:flex  font-semibold text-xl ">
+        <ul className="grid   grid-cols-2 gap-8 sm:flex  font-semibold text-xl ">
           <li>Products</li>
           <li>Returns</li>
           <li>FAQ</li>

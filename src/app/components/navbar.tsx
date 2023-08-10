@@ -48,26 +48,28 @@ export default function Navbar() {
             />
           </div>
         </div>
-        <div className="lg:hidden">
+        <div className="lg:hidden" onClick={() => setOpen(!open)}>
           <GiHamburgerMenu size={30} />
         </div>
       </nav>
-      <section className="">
-        <ul className="flex flex-col [&>a]:border-b  [&>a]:border-b-slate-900 [&>a]:py-2   text-center  text-xl font-bold bg-[#50806B] ">
-          <Link href="/" className="hover:text-white">
-            HOME
-          </Link>
-          <Link href="/" className="hover:text-white">
-            PRODUCTS
-          </Link>
-          <Link href="/" className="hover:text-white">
-            ABOUT US
-          </Link>
-          <Link href="/" className="hover:text-white">
-            CONTACT
-          </Link>
-        </ul>
-      </section>
+      {open && (
+        <section className="lg:hidden">
+          <ul className="flex flex-col [&>a]:border-b  [&>a]:border-b-slate-900 [&>a]:py-2   text-center  text-xl font-bold bg-[#50806B] ">
+            <Link href="/" className="hover:text-white">
+              HOME
+            </Link>
+            <Link href="/" className="hover:text-white">
+              PRODUCTS
+            </Link>
+            <Link href="/" className="hover:text-white">
+              ABOUT US
+            </Link>
+            <Link href="/" className="hover:text-white">
+              CONTACT
+            </Link>
+          </ul>
+        </section>
+      )}
     </div>
   );
 }

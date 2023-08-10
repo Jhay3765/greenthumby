@@ -2,8 +2,8 @@ import React from "react";
 import Card from "./card";
 export default function Testimonial() {
   return (
-    <div className="bg-[#E8EDDE] text-center py-20">
-      <h1 className="text-6xl font-semibold">Testimonials</h1>
+    <div className="bg-[#E8EDDE] text-center py-20 ">
+      <h1 className=" text-3xl  lg:text-6xl font-semibold">Testimonials</h1>
       <p className="text-2xl font-semibold py-2 ">Plant parents love us</p>
       <ul className="flex flex-wrap justify-center gap-8 py-8">
         <Card

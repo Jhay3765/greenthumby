@@ -2,9 +2,9 @@ import React from "react";
 import SellingItem from "./sellingItem";
 export default function Selling() {
   return (
-    <div className="px-4 lg:px-24">
-      <div className="flex justify-between items-center ">
-        <h1 className="text-2xl lg:text-5xl font-bold py-12 whitespace-nowrap">
+    <div className="px-4 lg:px-24 ">
+      <div className="flex justify-between items-center flex-wrap  ">
+        <h1 className="text-2xl lg:text-5xl font-bold py-12 whitespace-nowrap ">
           <span className="text-[#50806B]">Best</span> Selling
         </h1>
         <section className="text-xl lg:text-3xl whitespace-nowrap">
