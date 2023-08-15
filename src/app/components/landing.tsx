@@ -9,7 +9,7 @@ export default function Landing() {
         <p className="text-xl">
           Even if you don’t have a green thumb, you can still have a green home.
         </p>
-        <button className="bg-white text-black text-xl lg:text-3xl w-fit px-8 py-6 rounded-3xl font-bold hover:bg-slate-100">
+        <button className="bg-white text-black text-xl lg:text-3xl w-fit px-8 py-6 rounded-3xl font-bold hover:bg-black hover:text-white transition-colors duration-500">
           {" "}
           GET PLANTING
         </button>

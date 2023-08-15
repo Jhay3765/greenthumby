@@ -3,14 +3,14 @@ import HottestItem from "./hottestItem";
 import DealItem from "./dealItem";
 export default function Deal() {
   return (
-    <div className="px-4 lg:px-24 ">
+    <div className="max-w-7xl mx-auto px-2">
       <div className="flex justify-between items-center flex-wrap ">
         <h1 className="text-2xl lg:text-5xl font-bold py-12 whitespace-nowrap">
           <span className="text-[#50806B]">Fantastic</span> Deals
         </h1>
-        <section className="text-xl lg:text-3xl whitespace-nowrap">
+        <button className="text-xl lg:text-3xl whitespace-nowrap">
           SHOP ALL {" >"}
-        </section>
+        </button>
       </div>
 
       <hr className="border border-gray-900" />

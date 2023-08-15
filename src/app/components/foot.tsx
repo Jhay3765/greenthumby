@@ -6,29 +6,43 @@ import {
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
-
+import Link from "next/link";
 export default function Foot() {
   return (
     <footer className="flex flex-col items-center ">
       <div className="py-8 flex flex-col items-center">
         <ul className="grid   grid-cols-2 gap-8 sm:flex  font-semibold text-xl ">
-          <li>Products</li>
-          <li>Returns</li>
-          <li>FAQ</li>
-          <li>Shipping</li>
-          <li>About us</li>
-          <li>Contact us</li>
+          <button>Products</button>
+          <button>Returns</button>
+          <button>FAQ</button>
+          <button>Shipping</button>
+          <button>About us</button>
+          <button>Contact us</button>
         </ul>
         <ul className="flex gap-8 py-8 flex-wrap ">
-          <FaYoutube size={30} />
-          <FaFacebook size={30} />
-          <FaTwitter size={30} />
-          <FaInstagram size={30} />
-          <FaLinkedin size={30} />
+          <button>
+            {" "}
+            <FaYoutube size={30} />
+          </button>
+          <button>
+            <FaFacebook size={30} />
+          </button>
+          <button>
+            {" "}
+            <FaTwitter size={30} />
+          </button>
+
+          <button>
+            <FaInstagram size={30} />
+          </button>
+
+          <button>
+            <FaLinkedin size={30} />
+          </button>
         </ul>
       </div>
 
-      <div className="text-xs    bg-[#50806B] text-center w-full py-4 text-white tracking-widest sm:text-xl">
+      <div className="text-xs    bg-[#50806B] text-center w-full py-1 text-white tracking-widest sm:text-xl">
         COPYRIGHT GREEN THUMB. ALL RIGHTS RESERVED
       </div>
     </footer>

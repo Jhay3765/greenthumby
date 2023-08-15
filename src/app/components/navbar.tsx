@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FaSearch, FaShoppingBag } from "react-icons/fa";
 import { useState } from "react";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -10,42 +11,35 @@ export default function Navbar() {
   return (
     <div>
       <nav className="flex justify-around text-xl py-4 bg-white whitespace-nowrap items-center">
-        <h1 className="font-bold text-3xl">
+        <Link href="/" className="font-bold text-3xl">
           Green<span className="text-[#50806B] ">Thumb</span>
-        </h1>
+        </Link>
         <ul className="lg:flex gap-14 font-semibold hidden ">
-          <li>Home</li>
-          <li>Products</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
+          <Link href="/" className="hover:text-[#50806B]">
+            Home
+          </Link>
+          <Link href="/" className="hover:text-[#50806B]">
+            Products
+          </Link>
+          <Link href="/" className="hover:text-[#50806B]">
+            About Us
+          </Link>
+          <Link href="/" className="hover:text-[#50806B]">
+            Contact Us
+          </Link>
         </ul>
-        <div className="sm:flex hidden">
-          <p className="text-gray-400">Search</p>
-          <div className="border-r-2 border-gray-400 flex px-8 items-center">
-            <Image
-              src="/Search.svg"
-              alt="Search Button"
-              width={20}
-              height={25}
-            />
-          </div>
-          <div className="px-4">
-            <Image
-              src="/Vector.png"
-              alt="Cart"
-              width={20}
-              height={20}
-              quality={100}
-            />
-          </div>
+        <div className="sm:flex gap-12  items-center hidden">
+          <input type="text" placeholder="Search" className="px-2 py-1 w-36" />
 
-          <div className="border-r-2 border-gray-400 flex px-8 items-center sm:hidden">
-            <Image
-              src="/Search.svg"
-              alt="Search Button"
-              width={20}
-              height={25}
-            />
+          <div className="flex gap-4">
+            <div className="border-r-2 border-green-950/50 px-4">
+              <Link href="">
+                <FaSearch />
+              </Link>
+            </div>
+            <Link href="">
+              <FaShoppingBag />
+            </Link>
           </div>
         </div>
         <div className="lg:hidden" onClick={() => setOpen(!open)}>
@@ -58,7 +52,7 @@ export default function Navbar() {
             <Link href="/" className="hover:text-white">
               HOME
             </Link>
-            <Link href="/" className="hover:text-white">
+            <Link href="#category" className="hover:text-white">
               PRODUCTS
             </Link>
             <Link href="/" className="hover:text-white">

@@ -10,7 +10,9 @@ interface Props {
 export default function HottestItem(props: Props) {
   return (
     <li className="bg-white shadow-xl w-fit p-4 rounded-lg flex flex-col gap-4">
-      <Image src={props.img} alt="Best Selling" width={250} height={400} />
+      <button>
+        <Image src={props.img} alt="Best Selling" width={250} height={400} />
+      </button>
 
       <div className="leading-5">
         <p className="font-semibold text-2xl whitespace-nowrap">
@@ -18,9 +20,9 @@ export default function HottestItem(props: Props) {
         </p>
         <p className="text-xl">$ 350</p>
       </div>
-      <div className="bg-[#50806B]  text-center py-4 text-xl text-white rounded-lg font-semibold ">
+      <button className="bg-[#50806B]  text-center py-4 text-xl text-white rounded-lg font-semibold ">
         Buy
-      </div>
+      </button>
     </li>
   );
 }

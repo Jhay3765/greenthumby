@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Message() {
@@ -10,7 +11,9 @@ export default function Message() {
       </p>
       <div className="sm:flex gap-8 w-full justify-center hidden ">
         <p>USD</p>
-        <p className="font-semibold">SUPPORT</p>
+        <Link href="" className="font-semibold">
+          SUPPORT
+        </Link>
       </div>
     </div>
   );

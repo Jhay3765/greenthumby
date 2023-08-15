@@ -9,11 +9,17 @@ interface Props {
 export default function SellingItem(props: Props) {
   return (
     <li className="bg-white shadow-xl w-fit p-4 rounded-lg flex flex-col gap-4 ">
-      <Image src={props.img} alt="Best Selling" width={400} height={400} />
+      <Image
+        src={props.img}
+        alt="Best Selling"
+        width={350}
+        height={400}
+        className="cursor-pointer"
+      />
 
-      <div className="bg-[#50806B]  text-center py-4 text-white rounded-lg text-xl font-semibold">
+      <button className="bg-[#50806B]  text-center py-4 text-white rounded-lg text-xl font-semibold">
         Shop Now
-      </div>
+      </button>
     </li>
   );
 }
