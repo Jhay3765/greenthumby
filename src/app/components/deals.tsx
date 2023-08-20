@@ -15,18 +15,10 @@ export default function Deal() {
 
       <hr className="border border-gray-900" />
       <ul className="flex flex-wrap justify-around  gap-4 px-8 py-14 ">
-        <DealItem img="/deals/hoya.png " link="" title="Hoya Retusa" />
-        <DealItem img="/deals/jewel.png   " link="" title="Jewel Alocasias" />
-        <DealItem
-          img="/deals/red.png    "
-          link=""
-          title="Red Secret Alocasia"
-        />
-        <DealItem
-          img="/deals/string.png    "
-          link=""
-          title="String of Hearts"
-        />
+        <DealItem img="/deals/hoya.png" title="Hoya Retusa" />
+        <DealItem img="/deals/jewel.png" title="Jewel Alocasias" />
+        <DealItem img="/deals/red.png" title="Red Secret Alocasia" />
+        <DealItem img="/deals/string.png" title="String of Hearts" />
       </ul>
     </div>
   );
