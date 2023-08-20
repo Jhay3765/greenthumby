@@ -1,8 +1,8 @@
 import Image from "next/image";
 export default function Landing() {
   return (
-    <div className=" flex justify-center text-center bg-greenImage bg-no-repeat bg-cover bg-bottom pb-48">
-      <div className="py-28 px-8 lg:px-20 flex flex-col gap-12 max-w-xl imported items-center rounded-b-2xl ">
+    <div className=" flex justify-center text-center items-center bg-greenImage bg-no-repeat bg-cover bg-bottom ">
+      <div className="  px-8 lg:px-20  h-[500px]  lg:h-[900px] flex flex-col gap-12 max-w-xl justify-center imported items-center  ">
         <h1 className="font-bold text-3xl    lg:text-7xl ">
           Plants are our passion
         </h1>

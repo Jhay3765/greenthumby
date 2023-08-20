@@ -3,7 +3,9 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoIosSearch } from "react-icons/io";
 import { FaSearch, FaShoppingBag } from "react-icons/fa";
+import { PiShoppingCartSimple } from "react-icons/pi";
 import { useState } from "react";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -14,7 +16,7 @@ export default function Navbar() {
         <Link href="/" className="font-bold text-3xl">
           Green<span className="text-[#50806B] ">Thumb</span>
         </Link>
-        <ul className="lg:flex gap-14 font-semibold hidden ">
+        <ul className="lg:flex gap-14 ml-20 font-semibold hidden ">
           <Link href="/" className="hover:text-[#50806B]">
             Home
           </Link>
@@ -34,11 +36,11 @@ export default function Navbar() {
           <div className="flex gap-4">
             <div className="border-r-2 border-green-950/50 px-4">
               <Link href="">
-                <FaSearch />
+                <IoIosSearch size={25} />
               </Link>
             </div>
             <Link href="">
-              <FaShoppingBag />
+              <PiShoppingCartSimple size={25} />
             </Link>
           </div>
         </div>
